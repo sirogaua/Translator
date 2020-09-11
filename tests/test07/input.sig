@@ -1,0 +1,3 @@
+PROGRAM LAB1;
+    BEGIN
+    END.

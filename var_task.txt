@@ -1,0 +1,31 @@
+Варіант 14
+1. <signal-program> --> <program>
+2. <program> --> PROGRAM <procedure-identifier> ; <block>.
+3. <block> --> <declarations> BEGIN <statements-list> END
+
+4. <declarations>  --> <label-declarations> | VAR <var-decl-list>
+4.1 <var-decl-list> --> <var-decl-list> > <var-decl> |  <empty>
+4.2 <var-decl>      --> COND <conditional-expression> | STATE <statement>
+
+5. <label-declarations> --> LABEL <unsigned-integer> 
+   <labels-list>; | <empty>
+6. <labels-list> --> , <unsigned-integer><labels-list> | <empty>
+7. <statements-list> --> <statement> <statements-list> | <empty>
+8. <statement> --> <unsigned-integer> : <statement> | 
+    GOTO <unsigned-integer> ; | <condition-statement> ENDIF ;|;
+9. <condition-statement> --> <incomplete-condition-statement><alternative-part>
+10. <incomplete-condition-statement> --> IF <conditional-expression> 
+    THEN <statements-list>
+11. <conditional-expression> --> <variable-identifier> = <unsigned-integer>
+12. <alternative-part> --> ELSE<statements-list> | <empty>
+13. <variable-identifier> --> <identifier>
+14. <procedure-identifier> --> <identifier>
+15. <identifier> --> <letter><string>
+16. <string> --> <letter><string> | <digit><string> | <empty>
+17. <unsigned-integer> --> <digit><digits-string>
+18. <digits-string> --> <digit><digits-string> | <empty>
+19. <digit> --> 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+20. <letter> --> A | B | C | D | ... | Z
+
+
+

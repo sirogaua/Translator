@@ -1,0 +1,80 @@
+└──<signal program>
+    └──<program>
+        ├──401 PROGRAM
+        ├──<procedure-identifier>
+        │   └──<identifier>
+        │       └──1001 LAB1
+        ├──59 ;
+        ├──<block>
+        │   ├──<declarations>
+        │   │   └──<label-declarations>
+        │   │       ├──405 LABEL
+        │   │       ├──<unsigned-integer>
+        │   │       │   └──501 '12'
+        │   │       ├──<labels-list>
+        │   │       │   ├──44 ,
+        │   │       │   ├──<unsigned-integer>
+        │   │       │   │   └──502 '3'
+        │   │       │   └──<labels-list>
+        │   │       │       ├──44 ,
+        │   │       │       ├──<unsigned-integer>
+        │   │       │       │   └──503 '2'
+        │   │       │       └──<labels-list>
+        │   │       │           └──<empty>
+        │   │       └──59 ;
+        │   ├──402 BEGIN
+        │   ├──<statements-list>
+        │   │   ├──<statement>
+        │   │   │   ├──<unsigned-integer>
+        │   │   │   │   └──504 '1'
+        │   │   │   ├──58 :
+        │   │   │   └──<statement>
+        │   │   │       ├──<unsigned-integer>
+        │   │   │       │   └──503 '2'
+        │   │   │       ├──58 :
+        │   │   │       └──<statement>
+        │   │   │           └──59 ;
+        │   │   └──<statements-list>
+        │   │       ├──<statement>
+        │   │       │   ├──<condition-statement>
+        │   │       │   │   ├──<incomplete-condition-statement>
+        │   │       │   │   │   ├──406 IF
+        │   │       │   │   │   ├──<conditional-expression>
+        │   │       │   │   │   │   ├──<variable-identifier
+        │   │       │   │   │   │   │   └──<identifier>
+        │   │       │   │   │   │   │       └──1002 IDENTIF
+        │   │       │   │   │   │   ├──61 =
+        │   │       │   │   │   │   └──<unsigned-integer>
+        │   │       │   │   │   │       └──504 '1'
+        │   │       │   │   │   ├──407 THEN
+        │   │       │   │   │   └──<statements-list>
+        │   │       │   │   │       ├──<statement>
+        │   │       │   │   │       │   ├──404 GOTO
+        │   │       │   │   │       │   ├──<unsigned-integer>
+        │   │       │   │   │       │   │   └──504 '1'
+        │   │       │   │   │       │   └──59 ;
+        │   │       │   │   │       └──<statements-list>
+        │   │       │   │   │           └──<empty>
+        │   │       │   │   └──<alternative-part>
+        │   │       │   │       ├──408 ELSE
+        │   │       │   │       └──<statements-list>
+        │   │       │   │           ├──<statement>
+        │   │       │   │           │   ├──404 GOTO
+        │   │       │   │           │   ├──<unsigned-integer>
+        │   │       │   │           │   │   └──503 '2'
+        │   │       │   │           │   └──59 ;
+        │   │       │   │           └──<statements-list>
+        │   │       │   │               └──<empty>
+        │   │       │   ├──409 ENDIF
+        │   │       │   └──59 ;
+        │   │       └──<statements-list>
+        │   │           ├──<statement>
+        │   │           │   ├──<unsigned-integer>
+        │   │           │   │   └──503 '2'
+        │   │           │   ├──58 :
+        │   │           │   └──<statement>
+        │   │           │       └──59 ;
+        │   │           └──<statements-list>
+        │   │               └──<empty>
+        │   └──403 END
+        └──46 .

@@ -1,0 +1,21 @@
+└──<signal program>
+    └──<program>
+        ├──401 PROGRAM
+        ├──<procedure-identifier>
+        │   └──<identifier>
+        │       └──1001 LAB1
+        ├──59 ;
+        └──<block>
+            ├──<declarations>
+            │   └──<label-declarations>
+            │       └──<empty>
+            ├──402 BEGIN
+            └──<statements-list>
+                ├──<statement>
+                │   ├──<unsigned-integer>
+                │   │   └──501 '1'
+                │   ├──58 :
+                │   └──<statement>
+                │       └──59 ;
+                └──<statements-list>
+                    └──<empty>

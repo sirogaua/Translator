@@ -1,0 +1,12 @@
+└──<signal program>
+    └──<program>
+        ├──401 PROGRAM
+        ├──<procedure-identifier>
+        │   └──<identifier>
+        │       └──1001 LAB1
+        ├──59 ;
+        └──<block>
+            └──<declarations>
+                └──<label-declarations>
+                    ├──405 LABEL
+                    └──<unsigned-integer>
